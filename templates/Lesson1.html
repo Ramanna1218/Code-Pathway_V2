@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Code Pathway</title>
+
+        <link rel="stylesheet" href="../static/css/Lesson1Style.css">
+    </head>
+
+    <body>
+        <div id="MainLogo"></div>
+        <div class="container">
+            <p>Lesson 1 Introduction to Python</p>
+            <p id="LessonPlan">    Python is one of the most used programming languages currently in the world. 
+                It is one of the best languages for beginners because of how easy and forgiving the language 
+                is. The reason being is that Python includes a comprehensive library installed with the language. 
+                One of pythons greatest strengths is a wide array of libraries it has at its disposale. This 
+                allows users to who don't have the expertise or time to program specific functions or classes to 
+                seamlessly plug in functionality into their code. But we're getting ahead of ourselves so lets 
+                start at the beginning.
+            </p>
+
+            <p>Python Indentation</p>
+            <p id="LessonPlan">Indentation refers to the spaces at the beginning of a code line. 
+            Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important. 
+            Python uses indentation to indicate a block of code. 
+            Python will give you an error if you skip the indentation 
+            The number of spaces is up to you as a programmer, but it has to be at least one. 
+            You have to use the same number of spaces in the same block of code, otherwise Python will give you an error
+            </p>
+
+            <p>Comments</p>
+            <p id="LessonPlan">Comments can be used to explain Python code.
+            Comments can be used to make the code more readable.
+            Comments can be used to prevent execution when testing code.
+            Comments starts with a #, and Python will ignore them 
+            Python does not really have a syntax for multi line comments. 
+            To add a multiline comment you could insert a # for each line  
+            Or, not quite as intended, you can use a multiline string. 
+            Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it 
+            As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you have made a multiline comment. 
+            </p>
+
+
+            <p>Hello World</p>
+            <p id="LessonPlan">   Every programmer when they learn a new language does one line of code first. 
+                That line is printing to the console "Hello World". To do that in python you simply type:
+            </p>
+            <div class="code-block">
+                <pre>
+print("Hello World")
+                </pre>
+                </div>
+
+
+            <p>Lesson Quiz</p>
+            <p id="LessonPlan">Can you print out Hello World twice to the console? Example output below</p>
+            <div class="code-block">
+                <pre>
+Hello World
+Hello World
+                </pre>
+                </div>
+            <textarea id="UserCode">type here</textarea>
+            <button id="Submit">Submit</button>
+            <div id="AIResponse" class="hidden AITextBox"></div>
+            <button id="Continue" class="hidden">Continue</button>
+        </div>
+        
+        <script src="../static/scripts/Lesson1Script.js"></script>
+    </body>
+</html>

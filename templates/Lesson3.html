@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Pathway</title>
+
+    <link rel="stylesheet" href="../static/css/Lesson3Style.css">
+</head>
+
+<body>
+    <div id="MainLogo"></div>
+    <div class="container">
+        <p><b>Lesson 3: Introduction to Loops and arrays</b></p>
+
+        <p id="LessonPlan">
+            Python does not have built-in support for Arrays, but Python Lists can be used instead. 
+            Arrays are used to store multiple values in one single variable 
+            This lesson shows you how to use LISTS as ARRAYS, however, to work with arrays in Python you will have to
+            import a library, like the NumPy library. 
+            An array can hold many values under a single name, and you can access the values by referring to an index
+            number.
+
+            Array indexes start with 0: [0] is the first element. [1] is the second element, etc.
+
+            To find out how many elements an array has, use the length property "len(arrayName)""
+            You can use the append() method to add an element to an array. 
+            You can use the pop() method to remove an element from the array. 
+            You can also use the remove() method to remove an element from the array. 
+
+
+        </p>
+
+        <div class="code-block">
+            <pre>
+#Create Array
+cars = ["Ford", "Volvo", "BMW"]
+
+#Change Ford to Opel
+cars[0] = "Opel"
+
+lengthOfArray = len(cars)
+
+#Add Honda to the end of the array and remove Volvo from the array
+cars.append("Honda") 
+cars.remove("Volvo") 
+            </pre>
+        </div>
+
+        <p>Loops</p>
+
+        <p id="LessonPlan">
+            In programming there are two main kinds of loops. A for loop and a while loop. A while loop will first check
+            condition and if it's true
+            then run the code inside of it. Once it reaches the end it will check the condition again, loops can run
+            infinitely so make sure it's able to
+            exit when intended. For loops do the same steps except in python they are designed explicitly for iteration.
+            Iterating through a list of values for example.
+        </p>
+
+        <p id="LessonPlan">
+            Here is an example of both a while and a for loop:
+        </p>
+
+        <div class="code-block">
+            <pre>
+whileIndex = 0
+
+while (whileIndex != 10):
+    whileIndex =+ 1
+    print("Hello")
+
+ListOfNames = ["Jack", "John", "Ron"]
+
+for (index in ListOfNames):
+    print(index)
+                </pre>
+        </div>
+
+        <p id="LessonPlan">
+            In the while loop the text Hello is printed 10 times. In the for loop each named is printed one after
+            another starting with "Jack"
+        </p>
+
+        <p id="LessonPlan">
+            Loops are powerful tools for creating code that can go through each possible iteration easily.
+        </p>
+
+
+        <p><b>Lesson Quiz</b></p>
+        <p id="LessonPlan">Write a program that finds the 2nd largest number in the below array and prints it to the
+            console.</p>
+        <div class="code-block">
+            <pre>
+intArr[10, 4, 5, 3, 112, 110, 0, 150]
+                </pre>
+        </div>
+
+        <textarea id="UserCode">type here</textarea>
+        <button id="Submit">Submit</button>
+        <div id="AIResponse" class="hidden AITextBox"></div>
+        <button id="Continue" class="hidden">Continue</button>
+    </div>
+
+    <script src="../static/scripts/Lesson3Script.js"></script>
+</body>
+
+</html>

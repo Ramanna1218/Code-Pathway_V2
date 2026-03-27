@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Code Pathway</title>
+        <link rel="stylesheet" href="../static/css/MainStyle.css">
+    </head>
+
+    <body>
+        <button id="SignInButton">Sign in</button>
+        <div id="MainLogo"></div>
+        
+        <button id="theButton">Press to Begin</button>
+
+
+        <div id="signInMod" class="hidden container">
+            <div class="container">
+                <form class="form" id="login" method="post">
+                    <h1 class="form__title">Login</h1>
+                    <div class="form__message form__message--error"></div>
+                    <div class="form__input-group">
+                        <input type="email" class="form__input" autofocus placeholder="email" name="email">
+                        <div class="form__input-error-message"></div>
+                    </div>
+                    <div class="form__input-group">
+                        <input type="password" class="form__input" autofocus placeholder="Password" name="password">
+                        <div class="form__input-error-message"></div>
+                    </div>
+                    <button class="form__button" type="submit">Continue</button>
+                    <p class="form__text">
+                        <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+                    </p>
+                </form>
+
+
+                <form class="form form--hidden" id="createAccount" method="post">
+                    <h1 class="form__title">Create Account</h1>
+                    <div class="form__message form__message--error"></div>
+                    <div class="form__input-group">
+                        <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username" name="username">
+                        <div class="form__input-error-message"></div>
+                    </div>
+                    <div class="form__input-group">
+                        <input type="email" class="form__input" autofocus placeholder="Email Address" name="email">
+                        <div class="form__input-error-message"></div>
+                    </div>
+                    <div class="form__input-group">
+                        <input type="password" class="form__input" autofocus placeholder="Password" name="password">
+                        <div class="form__input-error-message"></div>
+                    </div>
+                    <button class="form__button" type="submit">Continue</button>
+                    <p class="form__text">
+                        <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <script src="../static/scripts/MainScript.js"></script>
+    </body>
+</html>

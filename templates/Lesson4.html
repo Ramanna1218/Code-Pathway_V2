@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Pathway</title>
+
+    <link rel="stylesheet" href="../static/css/FinalLessonStyle.css">
+</head>
+
+<body>
+    <div id="MainLogo"></div>
+    <div class="container">
+        <p><b>Lesson 4: Introduction to Functions and Classes</b></p>
+
+        <p id="LessonPlan">
+            A function is a block of code which only runs when it is called.
+            You can pass data, known as parameters, into a function.
+            A function can return data as a result.
+            In Python a function is defined using the def keyword: </p>
+
+        <div class="code-block">
+            <pre>
+def my_function(): 
+    print("Hello from a function") 
+                </pre>
+        </div>
+
+        <p id="LessonPlan">
+        To call a function in Python, write the function's name followed by two parentheses () </p>
+        <div class="code-block">
+            <pre>
+def my_function():
+    print("Hello from a function")
+          
+my_function()
+                </pre>
+        </div>
+
+        <p id="LessonPlan">
+        The terms parameter and argument can be used for the same thing: information that are passed into a function.
+        From a function's perspective:
+        A parameter is the variable listed inside the parentheses in the function definition.
+        An argument is the value that is sent to the function when it is called. </p>
+
+        <div class="code-block">
+            <pre>
+def my_function(fname):
+    print(fname)
+
+#prints each name to the console
+my_function("Emily")
+my_function("Tobias")
+my_function("Linus")
+                </pre>
+        </div>
+
+        <p id="LessonPlan">
+        By default, a function must be called with the correct number of arguments.
+        Meaning that if your function expects 2 arguments,
+        you have to call the function with 2 arguments, not more, and not less.</p>
+        <div class="code-block">
+            <pre>
+def my_function(fname, lname):
+    print(fname + " " + lname)
+
+my_function("Emil", "Refsnes")
+                </pre>
+        </div>
+        </p>
+
+        <p>
+            Classes
+        </p>
+
+        <p id="LessonPlan">
+            Python is an object oriented programming language.
+            Almost everything in Python is an object, with its properties and methods.
+            A Class is like an object constructor, or a "blueprint" for creating objects.
+
+            Create a Class
+            To create a class, use the keyword class </p>
+            <div class="code-block">
+                <pre>
+class MyClass:
+    x = 5
+                    </pre>
+            </div>
+            <p id="LessonPlan">
+            Now we can use the class named MyClass to create objects</p>
+            <div class="code-block">
+                <pre>
+p1 = MyClass()
+    print(p1.x)    
+                    </pre>
+            </div>
+            <p id="LessonPlan"> 
+            The __init__() Function
+            The examples above are classes and objects in their simplest form, and are not really useful in real life
+            applications.
+            To understand the meaning of classes we have to understand the built-in __init__() function.
+            All classes have a function called __init__(), which is always executed when the class is being initiated.
+            Use the __init__() function to assign values to object properties, or other operations that are necessary to
+            do when the object is being created </p>
+            <div class="code-block">
+                <pre>
+class Person:
+    def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+    p1 = Person("John", 36)
+
+    print(p1.name)
+    print(p1.age)    
+                    </pre>
+            </div>
+            <p id="LessonPlan">
+            The self parameter is a reference to the current instance of the class, and is used to access variables that
+            belong to the class.
+            It does not have to be named self , you can call it whatever you like, but it has to be the first parameter
+            of any function in the class
+            Since python is an object oriented language, we can have properties of OOPs like Polymorphism, Inheritance,
+            Encapsulation and Abstraction similar to other programming languages.
+            Scope of variables is also same as that of other languages.
+        </p>
+
+        <p><b>Lesson Quiz</b></p>
+        <p id="LessonPlan">Create a Python class called Employee that stores the following information for each employee: name, age, and job position. 
+            Use the employee data provided below to create instances of the Employee class and store them in a list. Next, write a function called print_employee_names 
+            that takes the list of employees as an argument and prints each employee's name to the console. See below for given employee data:</p>
+        <div class="code-block">
+            <pre>
+Sarah, 36, Engineer
+John, 42, Accountant
+Bob, 53, Cashier
+                </pre>
+        </div>
+
+        <textarea id="UserCode">type here</textarea>
+        <button id="Submit">Submit</button>
+        <div id="AIResponse" class="hidden AITextBox"></div>
+        <button id="Continue" class="hidden">Continue</button>
+    </div>
+
+    <script src="../static/scripts/FinalLessonScript.js"></script>
+</body>
+
+</html>

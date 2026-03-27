@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Pathway</title>
+
+    <link rel="stylesheet" href="../static/css/Lesson2Style.css">
+</head>
+
+<body>
+    <div id="MainLogo"></div>
+    <div class="container">
+        <p><b>Lesson 2: Introduction to Conditional Statements and Data types</b></p>
+
+        <p id="LessonPlan">
+            In programming, data type is an important concept.
+            Variables can store data of different types, and different types can do different things.
+
+            Python has the following data types built-in by default, in these categories:
+            Text Type: str
+            Numeric Types: int, float, complex
+            Sequence Types: list, tuple, range
+            Mapping Type: dict
+            Set Types: set, frozenset
+            Boolean Type: bool
+            Binary Types: bytes, bytearray, memoryview
+
+            In Python, it automatically selects the data type for you without the need to declare which type you want. 
+            In some instances however you may want to set the data type different than what the default type is. 
+            The data type is set when you assign a value to a variable
+            You can get the data type of any object by using the type() function
+            If you want to specify the data type, you can use the following constructor functions
+
+            There are three numeric types in Python:
+            int - Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
+            float - Float, or "floating point number" is a number, positive or negative, containing one or more
+            decimals.
+            complex - Complex numbers are written with a "j" as the imaginary part
+            Float can also be scientific numbers with an "e" to indicate the power of 10.
+
+            You can convert from one type to another with the int(), float(), and complex() methods
+        </p>
+        <p><b>Conditional statements</b></p>
+
+        <p id="LessonPlan">
+            Conditional statements let you execute specific code based on certain conditions, adding
+            dynamic behavior to your scripts.
+            They allow your code to make decisions and respond differently depending on the situation.
+            The basic structure in Python is an if statement, which checks whether a condition is True or False.
+        </p>
+
+        <p id="LessonPlan">
+            Here is an example:
+        </p>
+
+        <div class="code-block">
+            <pre>
+#This is set to a boolean type
+state = True
+
+if state == True:
+    print("Hello World")
+else:
+    print("No dice")
+                </pre>
+        </div>
+
+        <p id="LessonPlan">
+            In this code:
+        </p>
+        <ul id="LessonPlan">
+            <li>state is a boolean variable, which can be either True or False.</li>
+            <li>The if statement checks if state is True. If it is, the code inside the if block executes, printing
+                "Hello World".</li>
+            <li>If state is False, the code inside the else block runs, printing "No dice".</li>
+        </ul>
+
+        <p id="LessonPlan">
+            You can use different conditions other than == (equals). There are <= less than or equal to,> greater than,
+                etc. You can also add additional
+                conditions with elif (short for "else if"), which checks another condition if the first one isn’t met.
+                Here’s an example:
+        </p>
+
+        <div class="code-block">
+            <pre>
+state = False
+alternate_state = True
+
+if state == True:
+    print("Hello World")
+elif alternate_state == True:
+    print("Hello Universe")
+else:
+    print("No dice")
+            </pre>
+        </div>
+
+        <p id="LessonPlan">In this example:</p>
+        <ul id="LessonPlan">
+            <li>If state is True, it prints "Hello World".</li>
+            <li>If state is False but alternate_state is True, it prints "Hello Universe".</li>
+            <li>If both state and alternate_state are False, it prints "No dice".</li>
+        </ul>
+
+        <p id="LessonPlan">
+            Conditional statements are powerful tools for creating flexible and responsive code.
+        </p>
+
+
+        <p><b>Lesson Quiz</b></p>
+        <p id="LessonPlan">Write a program that checks if a variable "age" is:</p>
+        <ul id="LessonPlan">
+            <li>Less than 13: print "You are a child"</li>
+            <li>Between 13 and 19: print "You are a teenager"</li>
+            <li>20 or older: print "You are an adult"</li>
+        </ul>
+        <textarea id="UserCode">type here</textarea>
+        <button id="Submit">Submit</button>
+        <div id="AIResponse" class="hidden AITextBox"></div>
+        <button id="Continue" class="hidden">Continue</button>
+    </div>
+
+    <script src="../static/scripts/Lesson2Script.js"></script>
+</body>
+
+</html>
